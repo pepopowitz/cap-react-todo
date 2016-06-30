@@ -16,8 +16,9 @@
 
 		<script src="node_modules/todomvc-common/base.js"></script>
 		<script src="node_modules/react/dist/react-with-addons.js"></script>
+		<script src="node_modules/react-dom/dist/react-dom.js"></script>
 		<script src="node_modules/classnames/index.js"></script>
-		<script src="node_modules/react/dist/JSXTransformer.js"></script>
+		<script src="node_modules/babel-standalone/babel.min.js"></script>
 		<script src="node_modules/director/build/director.js"></script>
 
 		<script src="js/model/utils.js"></script>
@@ -25,10 +26,10 @@
 		<!-- jsx is an optional syntactic sugar that transforms methods in React's
 		`render` into an HTML-looking format. Since the two models above are
 		unrelated to React, we didn't need those transforms. -->
-		<script type="text/jsx" src="js/components/todoForm.jsx"></script>
-		<script type="text/jsx" src="js/components/todoItem.jsx"></script>
-		<script type="text/jsx" src="js/components/todoList.jsx"></script>
-		<script type="text/jsx" src="js/components/footer.jsx"></script>
-		<script type="text/jsx" src="js/app.jsx"></script>
+		<script type="text/babel" src="js/components/todoForm.jsx"></script>
+		<script type="text/babel" src="js/components/todoItem.jsx"></script>
+		<script type="text/babel" src="js/components/todoList.jsx"></script>
+		<script type="text/babel" src="js/components/footer.jsx"></script>
+		<script type="text/babel" src="js/app.jsx"></script>
 	</body>
 </html>

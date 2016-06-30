@@ -1,9 +1,11 @@
 {
   "private": true,
   "dependencies": {
+    "babel-standalone": "^6.10.3",
     "classnames": "^2.1.5",
     "director": "^1.2.0",
-    "react": "^0.13.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "todomvc-app-css": "^2.0.0",
     "todomvc-common": "^1.0.1"
   },
@@ -11,7 +13,7 @@
     "express": "^4.14.0",
     "opener": "^1.4.1"
   },
-  "scripts":{
-    "start":"node server.js"
+  "scripts": {
+    "start": "node server.js"
   }
 }

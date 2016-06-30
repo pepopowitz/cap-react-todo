@@ -2,7 +2,7 @@
 /*jshint white: false */
 /*jshint trailing: false */
 /*jshint newcap: false */
-/*global React */
+/*global React, ReactDOM */
 var app = app || {};
 
 (function () {
@@ -69,7 +69,7 @@ var app = app || {};
 		 */
 		componentDidUpdate: function (prevProps) {
 			if (!prevProps.editing && this.props.editing) {
-				var node = React.findDOMNode(this.refs.editField);
+				var node = ReactDOM.findDOMNode(this.refs.editField);
 				node.focus();
 				node.setSelectionRange(node.value.length, node.value.length);
 			}
